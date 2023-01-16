@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -78,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
+            android:background="@drawable/btnstyle"
             android:backgroundTint="@color/purple_500"
             android:text="@string/result_analysis"/>
 

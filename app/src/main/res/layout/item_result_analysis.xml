@@ -23,17 +23,19 @@
             android:padding="5dp"
             android:text="@{quiz.question}"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:text="Question" />
 
         <LinearLayout
+            android:layout_weight="6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_weight="4.1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Your Ans : "
@@ -42,7 +44,8 @@
                 android:textSize="18sp"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_weight="1.9"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="@{quiz.userAnswerDesc}"
@@ -55,20 +58,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="6"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_weight="4.1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="5dp"
                 android:text="Correct Ans : "
                 android:textStyle="bold"
                 android:textColor="@color/dark_gray"
                 android:textSize="18sp"
-                tools:text="Correct Answer : " />
+                tools:text="Correct Ans : " />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_weight="1.9"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="5dp"
                 android:text="@{quiz.answerDesc}"
@@ -79,6 +85,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -95,7 +102,7 @@
                 />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="5dp"
                 android:text="@{quiz.answerExplanation}"

@@ -9,6 +9,9 @@
     <string name="home">Home</string>
     <string name="next">Next</string>
     <string name="try_again">Try Again</string>
-<string name="result_analysis">Result Analysis</string>
+    <string name="result_analysis">Result Analysis</string>
     <string name="result">Result</string>
+    <string name="start">START</string>
+    <string name="quiz">QUIZ</string>
+    <string name="startScreenText">Please START to begin the quiz!!</string>
 </resources>

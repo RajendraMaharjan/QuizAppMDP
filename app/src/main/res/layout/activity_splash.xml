@@ -6,28 +6,39 @@
     android:background="@drawable/gradient"
     tools:context=".ui.SplashActivity">
 
-    <TextView
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_centerInParent="true"
-        android:textSize="120sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:text="QUIZ"
-         />
-
     <Button
         android:id="@+id/getStartedBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="120dp"
         android:layout_marginRight="120dp"
         android:layout_marginBottom="10dp"
-        android:layout_alignParentEnd="true"
-        android:background="@color/purple_500"
-        android:backgroundTint="@color/purple_500"
-        android:text="START"/>
+        android:background="@drawable/btnstyle"
+        android:text="@string/start" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewQuizMain"
+        android:layout_centerInParent="true"
+        android:text="@string/startScreenText"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtViewQuizMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/quiz"
+        android:textAlignment="center"
+        android:textSize="120sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
